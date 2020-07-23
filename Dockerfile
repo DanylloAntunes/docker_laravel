@@ -15,8 +15,6 @@ RUN ln -s public html
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-#RUN usermod -u 1000 www-data
-#RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories
 RUN usermod -u 1000 www-data
 USER www-data
 
